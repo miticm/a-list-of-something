@@ -7,7 +7,7 @@ form.addEventListener('submit',(e)=>{
     listArray.push(itemName)
 
     const listItem = document.createElement('li')
-    listItem.textContent = itemName
+    listItem.innerHTML = `<span>${itemName}</span>`
     createDeleteBtn(listItem)
 
     const list = document.querySelector("#list")

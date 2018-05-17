@@ -3,9 +3,6 @@ body{
     background: #eeeeee;
     font-family: 'Roboto Mono', monospace;
 }
-form{
-    margin-top: 5%;
-}
 h1{
     text-align: center;
     font-size: 3rem;
@@ -29,4 +26,29 @@ input{
 #w1{
     width: 50%;
     margin: 0 auto;
+}
+li{
+    height: 3rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #555555;
+    margin-top: 1px;
+}
+#list{
+    margin-top: 0;
+    padding: 0;
+}
+button{
+    height: 100%;
+    background: transparent;
+    border: none;
+}
+button:hover{
+    background: rgb(238, 28, 28);
+    transition-duration: .5s;
+}
+span{
+    height: 100%;
+    line-height: 3rem;
 }
