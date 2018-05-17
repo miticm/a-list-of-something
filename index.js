@@ -22,7 +22,10 @@ function createDeleteBtn(listItem){
     const deleteBtn = document.createElement('button')
     deleteBtn.textContent = 'Delete'
     deleteBtn.addEventListener('click',()=>{
+        const index = [...listItem.parentNode.childNodes].indexOf(listItem);
         listItem.parentNode.removeChild(listItem)
+        listArray.splice(index,1)
+        console.log(listArray)
     })
     listItem.appendChild(deleteBtn)
 }
